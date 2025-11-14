@@ -25,7 +25,8 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color, --secondary-color);
+    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav, p, section, article {
@@ -41,6 +42,12 @@ nav, p, section, article {
     position: relative;
 }
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -52,14 +59,8 @@ nav, p, section, article {
     color: #fff;
 }
 
-.hero article {
-    position: absolute;
+.hero article img {
     float: right;
     width: 125px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
