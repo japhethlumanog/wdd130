@@ -5,71 +5,105 @@
     box-sizing: border-box;
 }
 
-
+/* --- NAVIGATION --- */
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
+/* --- MAIN CONTENT --- */
 main {
     max-width: 650px;
+    margin: 1rem auto;
+    text-align: center;
 }
 
 h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 1rem 1rem;
-
-}
-
-p {
-    padding: 0;
-}
-
-.box {
-    width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
+}
+
+/* --- BOX COMPONENT --- */
+.box {
+    width: 15rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0,0,0,0.1);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2 {
-  position: relative;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #0000;
-    text-align: center;
-}
 .box img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin-bottom: 1rem;
 }
 
+/* --- ASIDE --- */
+aside {
+    width: 20em;
+    text-align: center;
+}
 
+aside img {
+    width: 200px;
+    margin: 0 auto 1rem;
+    height: auto;
+}
+
+/* If you want the h2 on top of the image */
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+
+/* --- GRID LAYOUT (if using) --- */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+/* --- HEADER & FOOTER --- */
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
