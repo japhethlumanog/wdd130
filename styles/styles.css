@@ -12,6 +12,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 nav a {
@@ -25,7 +27,7 @@ nav a {
 
 /* --- MAIN CONTENT --- */
 main {
-    max-width: 650px;
+    max-width: 700px;
     margin: 1rem auto;
     text-align: center;
 }
@@ -42,14 +44,19 @@ main img {
     box-shadow: 0 0 30px gray;
     float: right;
     margin: 1rem;
+    border-radius: 100px;
 }
+ main p {
+    margin: 30px;
+    text-wrap: unset;
+ }
 
 /* --- BOX COMPONENT --- */
 .box {
     width: 15rem;
     margin: 1rem auto;
     border: 1px solid rgba(0,0,0,0.1);
-    padding: 1rem;
+    padding: 2rem;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -61,7 +68,12 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.box a {
+    margin: 1rem;
+    text-decoration: none;
 }
 
 /* --- ASIDE --- */
@@ -72,8 +84,10 @@ aside {
 
 aside img {
     width: 200px;
-    margin: 0 auto 1rem;
+    margin: 20px;
     height: auto;
+    position: relative;
+    right: 32px;
 }
 
 /* If you want the h2 on top of the image */
@@ -83,19 +97,12 @@ aside {
 
 aside h2 {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     color: #000;
 }
 
-/* --- GRID LAYOUT (if using) --- */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-    align-items: start;
-}
 
 /* --- HEADER & FOOTER --- */
 header, footer {
@@ -106,4 +113,6 @@ header, footer {
 footer {
     margin-top: 15px;
     text-align: center;
+    border-top: 1px solid black ;
+    padding: 1rem;
 }
