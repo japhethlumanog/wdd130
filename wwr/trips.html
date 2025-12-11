@@ -2,80 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Site — About Us</title>
-    <meta name="description" content="White water rafting adventure company overview, history and mission">
-    <meta name="author" content="Japheth James D. Lumanog">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>White Water Rafting — Trips</title>
+    <meta name="description"
+        content="Trips offered by White Water Rafting Co. — detailed descriptions, photos, pricing, duration, and difficulty level for each trip." />
+    <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 
 <body>
     <header>
-        <h1>White Water Rafting</h1>
+        <img src="images/logo.png" alt="White Water Rafting company logo">
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="cta">
-            <h2>Have Questions? Contact Us!</h2>
-            <a class="cta-button" href="contact.html">Contact Us</a>
-        </section>
+    <main class="main-trip">
+        <h1>Our Trips</h1>
 
         <section class="trip-list">
-            <article>
-                <img src="images/beginner-rapid.jpg" alt="Beginner Rapids">
-                <h3>Beginner Rapids</h3>
-                <p>Perfect for first-timers. Easy waters with beautiful scenery.</p>
+            <article class="trip">
+                <img src="images/trip1.jpg" alt="Raft navigating big rapids">
+                <div class="trip-info">
+                    <h2>Whitewater Classic — Full Day</h2>
+                    <p><strong>Duration:</strong> 8 hours • <strong>Level:</strong> Class III–IV</p>
+                    <p>Experience nonstop rapids, scenic canyon views, and a riverside picnic. Perfect for
+                        thrill-seekers with some experience.</p>
+                    <p><a href="contact.html" class="button">Ask About This Trip</a></p>
+                </div>
             </article>
 
-            <article>
-                <img src="images/intermediate.jpg" alt="Intermediate Rapids">
-                <h3>Intermediate Challenge</h3>
-                <p>A great balance of fun rapids and calm stretches. Suitable for most people.</p>
+            <article class="trip">
+                <img src="images/trip2.jpg" alt="Family rafting on calm section of river">
+                <div class="trip-info">
+                    <h2>Half Day Family Float</h2>
+                    <p><strong>Duration:</strong> 3–4 hours • <strong>Level:</strong> Class I–II</p>
+                    <p>A relaxed float ideal for families and beginners. Enjoy wildlife viewing and gentle rapids
+                        suitable for kids and first-timers.</p>
+                    <p><a href="contact.html" class="button">Ask About This Trip</a></p>
+                </div>
             </article>
 
-            <article>
-                <img src="images/advance-extreme.jpg" alt="Advanced Rapids">
-                <h3>Advanced Extreme</h3>
-                <p>Fast, technical, and intense. Recommended for experienced rafters only.</p>
+            <article class="trip">
+                <img src="images/trip3.jpg" alt="Sunset on river after rafting">
+                <div class="trip-info">
+                    <h2>Canyon Express — Half Day Rapid Run</h2>
+                    <p><strong>Duration:</strong> 5 hours • <strong>Level:</strong> Class II–III</p>
+                    <p>Short on time but want excitement? The Canyon Express packs strong rapids and stunning scenery
+                        into a half-day adventure.</p>
+                    <p><a href="contact.html" class="button">Ask About This Trip</a></p>
+                </div>
             </article>
         </section>
 
         <section class="trip-table">
-            <h3>All Available Trips</h3>
+            <h2>All Trips Overview</h2>
             <table>
+                <caption>Compare our trips at a glance</caption>
                 <thead>
                     <tr>
-                        <th>Trip Name</th>
-                        <th>Difficulty</th>
+                        <th>Trip</th>
                         <th>Duration</th>
-                        <th>Price</th>
+                        <th>Difficulty</th>
+                        <th>Price (per person)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Beginner Rapids</td>
-                        <td>Easy</td>
-                        <td>2 Hours</td>
-                        <td>₱1,200</td>
+                        <td>Whitewater Classic — Full Day</td>
+                        <td>8 hours</td>
+                        <td>Class III–IV</td>
+                        <td>$120</td>
                     </tr>
                     <tr>
-                        <td>Intermediate Challenge</td>
-                        <td>Medium</td>
-                        <td>4 Hours</td>
-                        <td>₱2,000</td>
+                        <td>Half Day Family Float</td>
+                        <td>3–4 hours</td>
+                        <td>Class I–II</td>
+                        <td>$65</td>
                     </tr>
                     <tr>
-                        <td>Advanced Extreme</td>
-                        <td>Hard</td>
-                        <td>6 Hours</td>
-                        <td>₱3,500</td>
+                        <td>Canyon Express — Half Day</td>
+                        <td>5 hours</td>
+                        <td>Class II–III</td>
+                        <td>$85</td>
                     </tr>
                 </tbody>
             </table>
@@ -83,14 +98,13 @@
     </main>
 
     <footer>
-        <p>©️2025 | Rapids! | Japheth Lumanog</p>
-        <nav class="social" aria-label="Social Media Links">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"></a>
-            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn icon"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a>
+        <p>&copy; 2024 White Water Rafting Co. | Created by Japheth James D. Lumanog</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
         </nav>
     </footer>
-
 </body>
 
 </html>
